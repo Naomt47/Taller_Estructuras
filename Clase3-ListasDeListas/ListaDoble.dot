@@ -1,0 +1,33 @@
+digraph G{
+ rankdir=LR;
+Nodo0[label="Adam"];
+AdamNodo0[label="1 | Fresas | 15"];
+AdamNodo1[label="3 | Agua | 5"];
+AdamNodo0 -> AdamNodo1;
+Nodo0-> AdamNodo0;
+Nodo1[label="Lucia"];
+LuciaNodo0[label="1 | Lechuga | 15"];
+LuciaNodo1[label="2 | Mani | 9"];
+LuciaNodo0 -> LuciaNodo1;
+Nodo1-> LuciaNodo0;
+Nodo0 -> Nodo1;
+Nodo1 -> Nodo0;
+Nodo2[label="Carlos"];
+CarlosNodo0[label="1 | Salsa | 15"];
+CarlosNodo1[label="2 | Queso | 22"];
+CarlosNodo0 -> CarlosNodo1;
+CarlosNodo2[label="3 | Pan | 8"];
+CarlosNodo1 -> CarlosNodo2;
+Nodo2-> CarlosNodo0;
+Nodo1 -> Nodo2;
+Nodo2 -> Nodo1;
+Nodo3[label="Sam"];
+SamNodo0[label="1 | Jalea | 9"];
+SamNodo1[label="2 | Jamon | 24"];
+SamNodo0 -> SamNodo1;
+Nodo3-> SamNodo0;
+Nodo2 -> Nodo3;
+Nodo3 -> Nodo2;
+rank = same {Nodo0 Nodo1 Nodo2 Nodo3 }
+
+}
